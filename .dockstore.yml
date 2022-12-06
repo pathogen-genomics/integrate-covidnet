@@ -1,0 +1,13 @@
+version: 1.2
+workflows:
+   - name: IntegrateCOVIDNet
+     subclass: WDL
+     publish: True
+     primaryDescriptorPath: /IntegrateCOVIDNet.wdl
+     authors:
+       - name: Marc Perry
+         email: madperry@ucsc.edu
+         affiliation: University of California, Santa Cruz
+     filters:
+       branches: 
+         - main
